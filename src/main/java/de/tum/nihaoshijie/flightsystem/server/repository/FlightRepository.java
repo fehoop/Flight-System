@@ -11,7 +11,7 @@ import java.util.List;
 @Repository
 public interface FlightRepository extends CrudRepository<Flight, Long> {
     @Query("select f from Flight f where f.id =: id")
-    List<Flight> findAllFlights(@Param("id") long id);
+    List<Flight> findFlightsByOriginAndDestination(@Param("origin") String origin, @Param("destination") String destination);
 
 
 }

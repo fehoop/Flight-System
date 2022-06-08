@@ -14,7 +14,7 @@ public class FlightService {
         this.flightRepository = flightRepository;
     }
 
-    public List<Flight> findAll() {
-        return flightRepository.findAllFlights(1);
+    public List<Flight> findFlightsByOriginAndDestination(String origin, String destination) {
+        return flightRepository.findFlightsByOriginAndDestination(origin, destination);
     }
 }
