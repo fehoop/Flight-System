@@ -2,6 +2,7 @@ package de.tum.nihaoshijie.flightsystem.server.business;
 
 import de.tum.nihaoshijie.flightsystem.server.persistence.Flight;
 import de.tum.nihaoshijie.flightsystem.server.repository.FlightRepository;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,5 +17,9 @@ public class FlightService {
 
     public List<Flight> findFlightsByOriginAndDestination(String origin, String destination) {
         return flightRepository.findFlightsByOriginAndDestination(origin, destination);
+    }
+
+    public Flight saveFlight (Flight flight) {
+        return flightRepository.save(flight);
     }
 }
