@@ -12,6 +12,7 @@ import java.util.List;
 public interface FlightRepository extends CrudRepository<Flight, Long> {
     @Query("select f from Flight f where f.id =: id")
     List<Flight> findFlightsByOriginAndDestination(@Param("origin") String origin, @Param("destination") String destination);
+//    List<Flight> findFlightsByOriginAndDestinationAndDate(@Param("origin") String origin, @Param("destination") String destination, @Param("date") Date date);
 
 
 }
