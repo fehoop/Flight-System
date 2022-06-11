@@ -2,6 +2,7 @@ plugins {
     id 'org.springframework.boot' version '2.7.0'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
+    id 'org.openjfx.javafxplugin' version '0.0.10'
 }
 
 group = 'de.tum.nihaoshijie'
@@ -16,7 +17,12 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation group: 'org.slf4j', name: 'log4j-over-slf4j', version: '1.7.30'
+    implementation 'org.rationalityfrontline.workaround:jfoenix:17.0.2'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+javafx {
+    version = "17.0.1"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
 tasks.named('test') {
