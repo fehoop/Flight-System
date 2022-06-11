@@ -1,0 +1,90 @@
+1. Trip dashboard
+Flight
+- Date
+- Origin: City
+- Destination: City
+- Departure time
+- Arrival time
+- FlightId (icao)
+- Airline
+- Airplane type
+- Terminal
+- Gate
+- Status
+
+Status
+- NORMAL, DELAYED, CANCELLED
+
+City
+- Name
+- Description
+- Picture
+- POI
+- Weather
+
+POI
+- POIType
+- Coordinate
+- Address
+- Description
+- Picture
+- Rate: optional
+- Comments: optional
+
+POIType
+- hotel, restaurant, attraction
+
+Coordinate
+- Longtitude
+- Altitude
+
+Weather
+- Temperature
+- Wind
+- Weather condition
+- Humidity
+- Rain volume
+
+2. Survey
+Survey
+- Evaluation
+
+Evaluation
+- Id
+- Theme
+- Question
+- Rate
+- Comments
+
+Reward
+- Type
+- Discription
+
+3. In-flight service
+Entertainment
+- EntertainmentType
+
+Instruction
+- InstructionType
+
+Multimedia
+- Name
+- Url
+
+Service
+- Id
+- Type
+- Picture
+- Description
+
+Menu
+-Service
+
+4. Preference
+POI
+- PoiId
+-...
+
+Flight
+- FlightId
+-...
