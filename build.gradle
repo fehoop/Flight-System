@@ -15,8 +15,9 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation group: 'org.slf4j', name: 'log4j-over-slf4j', version: '1.7.30'
     implementation 'com.h2database:h2:2.1.212'
+    implementation 'org.hibernate:hibernate-core:6.0.1.Final'
+    implementation 'org.hibernate:hibernate-entitymanager:5.6.8.Final'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
