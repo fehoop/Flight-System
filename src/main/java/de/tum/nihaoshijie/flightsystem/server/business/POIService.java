@@ -26,7 +26,7 @@ public class POIService {
     public List<POI> filterTenBestPOIs() {
         List<POI> pois = new ArrayList<POI>();
         poiRepository.findAll().forEach(poi -> pois.add(poi));
-        List<POI> sortedPOIs = pois.stream().sorted(Comparator.comparing(POI::getId).reversed()).collect(Collectors.toList());
+        List<POI> sortedPOIs = pois.stream().sorted(Comparator.comparing(POI::getRate).reversed()).collect(Collectors.toList());
         List<POI> bestPOIs = sortedPOIs.size()>10? sortedPOIs.stream().limit(10).collect(Collectors.toList()) : sortedPOIs;
         return bestPOIs;
     }
