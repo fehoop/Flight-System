@@ -12,6 +12,9 @@ Flight
 - Gate
 - Status
 
+Status
+- NORMAL, DELAYED, CANCELLED
+
 City
 - Name
 - Description
@@ -20,16 +23,22 @@ City
 - Weather
 
 POI
-- Type: hotel, restaurant, attraction
+- POIType
 - Coordinate
 - Address
-- Discription
+- Description
 - Picture
 - Rate: optional
 - Comments: optional
 
+POIType
+- hotel, restaurant, attraction
+
+Coordinate
+- Longtitude
+- Altitude
+
 Weather
-- City
 - Temperature
 - Wind
 - Weather condition

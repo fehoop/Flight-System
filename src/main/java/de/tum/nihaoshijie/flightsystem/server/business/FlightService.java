@@ -1,8 +1,7 @@
 package de.tum.nihaoshijie.flightsystem.server.business;
 
-import de.tum.nihaoshijie.flightsystem.server.persistence.Flight;
+import de.tum.nihaoshijie.flightsystem.server.persistence.flight.Flight;
 import de.tum.nihaoshijie.flightsystem.server.repository.FlightRepository;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
