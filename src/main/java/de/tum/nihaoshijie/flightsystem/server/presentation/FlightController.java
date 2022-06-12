@@ -21,7 +21,9 @@ public class FlightController {
     }
 
     @GetMapping("/flight")
-    public List<Flight> findFlightsByOriginAndDestinationWithDate(@RequestParam("origin") String origin, @RequestParam("destination") String destination, @RequestParam("date") String date) {
+    public List<Flight> findFlightsByOriginAndDestinationWithDate(@RequestParam("origin") String origin,
+                                                                  @RequestParam("destination") String destination,
+                                                                  @RequestParam("date") String date) {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         Date d = null; // TODO: d cannot be null!
         try {
@@ -34,7 +36,7 @@ public class FlightController {
 
     @PostMapping("/flight")
     public void saveFlight(@RequestBody FlightModel flight) {
-
+        // TODO save flight to data base
     }
 
 }
