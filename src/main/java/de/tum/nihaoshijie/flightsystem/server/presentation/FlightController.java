@@ -3,10 +3,8 @@ package de.tum.nihaoshijie.flightsystem.server.presentation;
 import de.tum.nihaoshijie.flightsystem.server.business.FlightService;
 import de.tum.nihaoshijie.flightsystem.server.persistence.Flight;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import de.tum.nihaoshijie.flightsystem.common.model.FlightModel;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -28,10 +26,15 @@ public class FlightController {
         Date d = null; // TODO: d cannot be null!
         try {
             d = sdf.parse(date);
-        }catch (ParseException e) {
+        } catch (ParseException e) {
             System.err.println(e.getMessage());
         }
         return flightService.findFlightsByDepCityAndArrCityAndFlightDate(origin, destination, d);
+    }
+
+    @PostMapping("/flight")
+    public void saveFlight(@RequestBody FlightModel flight) {
+
     }
 
 }
