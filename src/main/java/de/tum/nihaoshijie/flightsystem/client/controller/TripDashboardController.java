@@ -9,15 +9,16 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.AnchorPane;
+
 
 public class TripDashboardController {
     private String homeScenePath = "view/HomeScene.fxml";
     
     // the main Pane of this scene, control the change of scene
     @FXML
-    private BorderPane mainPane;
-
+    private AnchorPane mainPane;
+    
     @FXML
     private JFXButton backButton;
 

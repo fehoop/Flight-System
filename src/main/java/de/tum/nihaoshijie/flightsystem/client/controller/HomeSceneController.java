@@ -9,7 +9,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
-import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 
 
@@ -20,7 +20,7 @@ public class HomeSceneController {
     
     // the main pane of this scene, control the change of scene
     @FXML
-    private BorderPane clientApplication;
+    private AnchorPane mainPane;
 
     @FXML
     private Button dashBoard;
@@ -38,7 +38,7 @@ public class HomeSceneController {
     @FXML
     void startDashBoard(ActionEvent event) {
         try {
-            clientApplication.getScene().setRoot(FXMLLoader.load(ClientApplication.class.getResource(tripDashBoardPath)));
+            mainPane.getScene().setRoot(FXMLLoader.load(ClientApplication.class.getResource(tripDashBoardPath)));
         } catch (Exception ex) {
           ex.printStackTrace();
         }
@@ -47,7 +47,7 @@ public class HomeSceneController {
     @FXML
     void startInFlightSystem(ActionEvent event) {
         try {
-            clientApplication.getScene().setRoot(FXMLLoader.load(ClientApplication.class.getResource(inFlightPath)));
+            mainPane.getScene().setRoot(FXMLLoader.load(ClientApplication.class.getResource(inFlightPath)));
         } catch (Exception ex) {
           ex.printStackTrace();
         }
@@ -56,7 +56,7 @@ public class HomeSceneController {
     @FXML
     void startSurvey(ActionEvent event) {
         try {
-            clientApplication.getScene().setRoot(FXMLLoader.load(ClientApplication.class.getResource(surveyPath)));
+            mainPane.getScene().setRoot(FXMLLoader.load(ClientApplication.class.getResource(surveyPath)));
         } catch (Exception ex) {
           ex.printStackTrace();
         }

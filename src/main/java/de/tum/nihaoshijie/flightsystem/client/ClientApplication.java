@@ -28,7 +28,7 @@ public class ClientApplication extends Application{
         this.stage = primaryStage;
         
         //set stage unresizeable
-        //primaryStage.setResizable(false);
+        primaryStage.setResizable(false);
         //settitle
         System.out.println("Flight System start!");
         primaryStage.setTitle("Flight System - NHSJ");
