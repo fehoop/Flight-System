@@ -19,7 +19,7 @@ dependencies {
     implementation 'com.h2database:h2:2.1.212'
     implementation 'org.hibernate:hibernate-core:6.0.1.Final'
     implementation 'org.hibernate:hibernate-entitymanager:5.6.8.Final'
-
+    implementation 'org.rationalityfrontline.workaround:jfoenix:17.0.2'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 javafx {
