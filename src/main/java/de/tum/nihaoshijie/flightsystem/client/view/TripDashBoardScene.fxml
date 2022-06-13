@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.tum.nihaoshijie.flightsystem.client.controller.TripDashboardController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="323.0" style="-fx-background-color: #e2ebf3;">
+         <children>
+            <HBox prefHeight="33.0" prefWidth="323.0">
+               <children>
+                  <JFXButton fx:id="backButton" contentDisplay="CENTER" onAction="#goBack" prefHeight="35.0" prefWidth="49.0" style="-fx-background-color: #AEEEEE;">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resource/dashboardIcons/BackIcon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
