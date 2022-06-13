@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXMasonryPane?>
+<?import javafx.scene.control.Label?>
+
+
+<JFXMasonryPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.tum.nihaoshijie.flightsystem.client.controller.SurveyController">
+   <children>
+      <Label fx:id="labelRed" onMouseClicked="#labelRedClick" prefHeight="153.0" prefWidth="149.0" style="-fx-background-color: red;" text="Red" textAlignment="CENTER" />
+      <Label prefHeight="143.0" prefWidth="98.0" style="-fx-background-color: blue;" text="Blue" />
+      <Label prefHeight="254.0" prefWidth="56.0" style="-fx-background-color: yellow;" text="Label" />
+      <Label prefHeight="58.0" prefWidth="139.0" style="-fx-background-color: black;" text="Label" />
+   </children>
+</JFXMasonryPane>
