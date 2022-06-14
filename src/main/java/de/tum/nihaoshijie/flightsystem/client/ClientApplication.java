@@ -18,7 +18,7 @@ import javafx.stage.Stage;
 public class ClientApplication extends Application{
     //all ViewController in the whole flight system
     private Stage stage;
-    private String homeScenePath = "view/HomeScene.fxml";
+    private String homeScenePath = "/clientview/fxmls/HomeScene.fxml";
     @Override
     public void start(Stage primaryStage) throws Exception {
         //load homescene fxml file 
@@ -34,7 +34,7 @@ public class ClientApplication extends Application{
         primaryStage.setTitle("Flight System - NHSJ");
         
         //set Icon with file path
-        Image image = new Image(getClass().getResourceAsStream("resource/Icon.png"));
+        Image image = new Image(getClass().getResourceAsStream("/clientview/resource/Icon.png"));
         primaryStage.getIcons().add(image);
         
         //set homeScene with fxml file

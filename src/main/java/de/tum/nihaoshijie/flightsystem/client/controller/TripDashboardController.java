@@ -13,7 +13,7 @@ import javafx.scene.layout.AnchorPane;
 
 
 public class TripDashboardController {
-    private String homeScenePath = "view/HomeScene.fxml";
+    private String homeScenePath = "/clientview/fxmls/HomeScene.fxml";
     
     // the main Pane of this scene, control the change of scene
     @FXML
