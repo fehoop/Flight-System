@@ -14,9 +14,9 @@ import javafx.scene.layout.VBox;
 
 
 public class HomeSceneController {
-    private String tripDashBoardPath = "view/TripDashBoardScene.fxml";
-    private String surveyPath = "view/Survey.fxml";
-    private String inFlightPath = "view/InFlight.fxml";
+    private String tripDashBoardPath = "/clientview/fxmls/TripDashBoardScene.fxml";
+    private String surveyPath = "/clientview/fxmls/Survey.fxml";
+    private String inFlightPath = "/clientview/fxmls/InFlight.fxml";
     
     // the main pane of this scene, control the change of scene
     @FXML
